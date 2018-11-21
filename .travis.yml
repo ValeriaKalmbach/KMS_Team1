@@ -1,2 +1,14 @@
+os: osx
 language: node_js
-script: "sudo $(which npm) test"
+node_js:
+  - "6.4.1"
+sudo: false
+cache:
+  directories:
+  - node_modules
+before_install:
+- npm update
+install:
+- npm install
+script:
+- npm test
