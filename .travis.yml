@@ -1,5 +1,7 @@
-os: osxnvm install 6.4.1
+
 language: node_js
+node_js:
+  - "6.4.1"
 sudo: false
 cache:
   directories:
